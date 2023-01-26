@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<form action="" method="POST">
+  <h1>Admin login</h1>
+  {% csrf_token %}
+  {{form.as_p}}
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock content %}
+
+
